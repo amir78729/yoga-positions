@@ -3,8 +3,7 @@ import {Position} from "@/app/types";
 
 export async function GET(request: NextRequest) {
     const res = await fetch('https://raw.githubusercontent.com/amir78729/front-end-roadmap/main/projects/yoga-positions/sample-positions.json', {})
-    const data = await res.json() as Position[];
-
+    const data = await res?.json() as Position[];
     const searchParams = request.nextUrl.searchParams;
     const id = searchParams.get('id');
 

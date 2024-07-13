@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {addYogaPositionToFavorites, isYogaPositionFavorite, removeYogaPositionFromFavorites} from "@/app/utils";
 import {Position} from "@/app/types";
-import {IconButton, Skeleton} from "@mui/material";
-import {Favorite, FavoriteBorder, Star, StarBorder} from "@mui/icons-material";
+import {IconButton} from "@mui/material";
+import {Favorite, FavoriteBorder} from "@mui/icons-material";
 
 
 type Props = {
@@ -37,7 +37,7 @@ const FavoriteButton = ({position}: Props) => {
 
     if (isFav === null) return (
         <IconButton disabled>
-            <StarBorder/>
+            <FavoriteBorder/>
         </IconButton>
     )
     return (
