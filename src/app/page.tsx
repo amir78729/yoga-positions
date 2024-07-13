@@ -1,7 +1,7 @@
 'use client'
 import Lottie from "lottie-react";
 import animationData from './assets/lottiefiles/yoga-girl.json';
-import {Box} from "@mui/system";
+import {Box} from "@mui/material";
 import Sidebar from "@/app/components/Sidebar";
 import React from "react";
 import {Typography} from "@mui/material";
